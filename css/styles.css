@@ -1,0 +1,253 @@
+:root{
+   --primary-text-color: #212121;
+   --nav-contact-color: #757575;
+   --title-text-color: #000000;
+   --accent-color: #2196F3;
+   --title-color:  #FFFFFF;
+   --background-accent-color: #2f303a;
+   --team-background-color: #f5f4fa;  
+   --footer-email-tel: rgba(255, 255, 255, 0.6);
+   --header-border: #ececec;
+   --portfolio-border: #eeeeee;
+ }
+ /*----------BODY----------*/
+
+ body{
+   font-family: "Roboto" , sans-serif;
+   font-weight: 400;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
+   background-color: var(--title-color);
+   color: var(--nav-contact-color);
+ }
+ h1 h2 h3 h4 p ul{
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
+ 
+ 
+ button {
+   cursor: pointer;
+ }
+ address{
+   font-style: normal;
+ }
+ 
+ header {
+  border-bottom: 1px solid var(--header-border);
+ }
+ /* img{
+  display: block; 
+   } */
+/*.visually-hidden {   */
+   .visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0;
+    border:0;
+    height: 1px; 
+    width: 1px; 
+    overflow: hidden;
+  }
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .external{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+ .list{
+  font-size: 14px;
+
+   list-style: none;
+
+   margin: 0;
+   padding: 0;
+ }
+ .link{
+  text-decoration: none;
+}
+ .section-title{
+   font-weight: 700;
+   font-size: 14px;
+
+   color: var(--primary-text-color);
+
+   
+ }
+ 
+ 
+ /*----------HEADER----------*/
+ .menu{
+   font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+ }
+ 
+ .menu-nav{
+   color: var(--primary-text-color);
+ }
+ .menu-contact{ 
+  color: var(--nav-contact-color);
+  font-weight: 500;
+}
+ 
+ .logo{
+   font-family: "Raleway", san-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: inherit;
+   margin-right: 93px; 
+
+ }
+ .logo-blue{ color: var(--accent-color); }
+ .logo-black{ color: var(--title-text-color)}
+ 
+ 
+ .current,
+ .menu-nav:hover,
+ .menu-nav:focus,
+ .menu-contact:hover,
+ .menu-contact:focus,
+ .footer-contacts:hover,
+ .footer-contacts:focus{
+   color: var(--accent-color);
+ }
+ 
+ /*----------Герой----------*/
+ .list-flex{
+  display: flex;
+}
+ .hero {
+   background-color: var(--background-accent-color);
+   text-align: center;
+ }
+ 
+ .hero-title,
+ .hero-button {
+   letter-spacing: 0.06em;
+   color: var(--title-color);
+   font-weight: 700;
+  
+}
+.hero-button {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+ 
+ .hero-title {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.4;
+   text-transform: uppercase;
+
+   margin-top: 0;
+   margin-bottom: 30px;
+   padding: 0;
+  
+   
+ }
+ 
+ .hero-button {
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.9;
+   background-color: var(--accent-color);
+   color: var(--title-color);
+   border-radius: 4px;  
+  border-color: transparent;
+ }
+ .hero-btn{
+  padding: 10px 32px;
+  min-width: 200px;
+}
+ 
+ /*----------Особливості----------*/
+
+ .list-text{
+   line-height: 1.7;
+ }
+ 
+ /*----------Чим займаємося---------*/
+ .title-size{
+   font-size: 36px;
+ }
+ 
+ /*----------Наша команда----------*/
+ .team {
+   background-color: var(--team-background-color);
+ }
+ 
+ .team-name,
+ .professions {
+   font-size: 16px;
+ }
+ .team-name {
+   font-weight: 500;
+   color: var(--primary-text-color);
+ }
+ 
+ /*----------Футер---------*/
+ .footer {
+   background-color: var(--background-accent-color);
+ }
+
+
+ .footer-studio,
+ .footer-address,
+ .logo-white {
+   color: var(--title-color);
+ }
+ 
+ .footer-contacts {
+   line-height: 1.7;
+   color: var(--footer-email-tel);
+ }
+ 
+ /*----------Page Portfolio.html----------*/
+
+ .list-flex{
+  display: flex;
+}
+
+ .buttons {
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   letter-spacing: inherit;
+   color: var(--primary-text-color);
+   background-color: var(--team-background-color);
+ }
+ 
+ .buttons:focus,
+ .buttons:hover {
+   color: var(--title-color);
+   background-color: var(--accent-color);
+ }
+ 
+ .portfolio-title {
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+ }
+ 
+ .portfolio-text {
+   font-size: 16px;
+   line-height: 1.9;
+   color: var(--nav-contact-color);
+ }
+
+ 
