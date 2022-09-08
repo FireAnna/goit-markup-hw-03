@@ -11,26 +11,27 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="external">
+        <div class="container wrapper">
+          
+<!-- Навігація -->
                 <nav class="menu">
                     <a href="./index.html" class="logo link"><span class="logo-blue">Web</span><span
                         class="logo-black">Studio</span></a> 
-                <ul class="list">
-                    <li><a href="./index.html"class="link current">Студія</a></li>
+                <ul class="list list-flex">
+                    <li><a href="./index.html" class="link current">Студія</a></li>
                     <li> <a href="./portfolio.html" class="menu-nav link">Портфоліо</a></li>
-                    <li> <a href="./"class="menu-nav link">Контакти</a></li>
+ <!-- Контакти  -->
+                    <li> <a href="./" class="menu-nav link">Контакти</a></li>
                 </ul>
                 </nav>
-            <ul class="list">
+            <ul class="list  list-flex">
                 <li>
-                    <a href="mailto:info@devstudio.com" class="menu-contact link">info@devstudio.com</a>
+                    <a href="mailto:info@devstudio.com" class="menu-contact link link-nav">info@devstudio.com</a>
                 </li>
                 <li>
-                 <a href="tel:+380961111111" class="menu-contact link">+38 096 111 11 11</a>
+                 <a href="tel:+380961111111" class="menu-contact link link-nav">+38 096 111 11 11</a>
                 </li>
                 </ul>
-            </div>
         </div>
     </header>        
 <!-- Герой -->
@@ -39,13 +40,14 @@
             <div class="container">
                 <div class="hero-container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button"class="hero-button">Замовити послугу</button>
+                    <button type="button"
+                    class="hero-button">Замовити послугу</button>
                 </div>
             </div>
         </section>
-        <section class="section-features">
+        <section class="section section-features">
 <!-- Особливості -->
-            <div>
+            <div class="container">
                 <h2 class="section-title visually-hidden" > Особливості </h2>
             <ul class="list features-list">
                 <li>
@@ -71,53 +73,50 @@
         </div>
     </section>
 <!-- Чим займаємося -->
-        <section class="section-works">
+        <section class="section section-works">
         <div class="container">
              <h2 class="section-title title-size">Чим ми займаємося</h2>
-            <ul class="list">
+            <ul class="list list-works">
                <li>
-                <img src="./images/site_creator.jpg " width="370"  alt=" написання  коду ">
-            </li>
-               <li><img src="./images/mobile_app.jpg " width="370"   alt=" тестування мобільного додатку ">
-            </li>
-               <li><img src="./images/design1.jpg " width="370"  alt=" кольорова гама ">
-            </li>
+                <img src="./images/site_creator.jpg " width="370"  alt=" написання  коду " class="list-fotos"></li>
+               <li><img src="./images/mobile_app.jpg " width="370"   alt=" тестування мобільного додатку " class="list-fotos"></li>
+               <li><img src="./images/design1.jpg " width="370"  alt=" кольорова гама " class="list-fotos"></li>
         </ul>
     </div>
 </section>
 <!-- Наша команда       -->
-        <section class="team">
+        <section class=" teams">
             <div class="container">
                 <h2 class="section-title title-size">Наша команда</h2>
-                <ul class="list">
-                    <li>
-                        <img src="./images/demianenko1.jpg" width="270" alt="Фото Ігор Дем'яненко">
+                <ul class="list team-list">
+                    <li class="team-items">
+                        <img  class="team-foto" src="./images/demianenko1.jpg" width="270" alt="Фото Ігор Дем'яненко">
                         <div class="cards">
                             <h3 class=" team-name">Ігор Дем'яненко</h3>
                         <p class=" professions">Product Designer</p>
                         </div>
                         
                     </li>
-                    <li>
-                        <img src="./images/olha_repina3.jpg" width="270" alt="Фото Ольга Рєпіна">
+                    <li class="team-items">
+                        <img  class="team-foto" src="./images/olha_repina3.jpg" width="270" alt="Фото Ольга Рєпіна">
                         <div class="cards">
                             <h3 class=" team-name">Ольга Рєпіна</h3>
                             <p class=" professions">Frontend Develope</p>
                         </div>
                         
                     </li>
-                    <li>
-                        <img src="./images/tarasov4.jpg"  width="270" alt="Микола Тарасов">
+                    <li class="team-items">
+                        <img  class="team-foto" src="./images/tarasov4.jpg"  width="270" alt="Микола Тарасов">
                         <div class="cards">
                             <h3 class=" team-name">Микола Тарасов</h3>
                             <p class=" professions" >Marketing</p>
                         </div>
                         
                     </li>
-                    <li>
-                        <img src="./images/demianenko1.jpg" width="270" alt="Фото Михайло Єрмаков">
+                    <li class="team-items">
+                        <img  class="team-foto" src="./images/demianenko1.jpg" width="270" alt="Фото Михайло Єрмаков">
                         <div class="cards">
-                            <h3  team-name >Михайло Єрмаков</h3>
+                            <h3 class=" team-name" >Михайло Єрмаков</h3>
                         <p class=" professions">UI Designer</p>
                     </div>
                 </li>
@@ -128,21 +127,22 @@
 <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <div class="external">
+            <div class="footer-wrapper">
                 <a href="./index.html" class="logo link logo-white" lang="en"><span class="logo-blue">Web</span><span
                     class="footer-studio">Studio</span></a>
                 <address>
-                    <ul class="contact list">
-                            <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&h" target="_blank" rel="noreferrer noopener" class="link"> <span class="footer-address">
-                                м. Київ, пр-т Лесі Українки, 26</a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@devstudio.com" class="link footer-contacts">info@devstudio.com</a>
-                        </li>
-                        <li>
-                            <a href="tel:+380961111111" class="link footer-contacts">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
+                    <ul class="contacts-list">
+            <li class="logo-white">
+                <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&h" target="_blank" rel="noreferrer noopener"
+                 class="link "><span class="footer-address">г.
+                    Киев, пр-т Леси Украинки, 26</span></a>
+            </li>
+            <li>
+                <a href="mailto:info@devstudio.com" class="link footer-contacts" >info@devstudio.com</a>
+            </li>
+            <li><a href="tel:+380961111111" class="link footer-contacts">+38 096 111 11 11</a>
+            </li>
+        </ul>
                 </address>
             </div>
         </div> 

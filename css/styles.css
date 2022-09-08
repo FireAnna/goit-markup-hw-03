@@ -1,3 +1,17 @@
+/*
+ wrapper, list, current, menu-nav, list-flex-  Навігація 
+ link ,section-title,portfolio-title,  portfolio-text .portfolio-items . projects-filter .portfolio-element portfolio-cards- Наші роботи 
+ link,footer,footer-wrapper,logo,logo-white,footer-address footer-list- - Футер
+ menu, -Лого
+ menu-nav, menu-contact, list-flex, link-nav- Контакти
+ current,visually-hidden,title-size,section-works , list-works ,list-fotos - Чим займаємось 
+ hero ,hero-container,hero-title, hero-button , section-features - Герой 
+ list-title, list-text ,features-list -Особливості 
+ title-size, team , team-name ,team-list, team-items ,cards ,team-foto - Наша команда 
+ buttons buttons:focus,buttons:hover,navigation-projects- Продукти 
+
+
+*/
 :root{
    --primary-text-color: #212121;
    --nav-contact-color: #757575;
@@ -15,16 +29,13 @@
  body{
    font-family: "Roboto" , sans-serif;
    font-weight: 400;
+   font-size: 14px;
    line-height: 1.2;
    letter-spacing: 0.03em;
    background-color: var(--title-color);
    color: var(--nav-contact-color);
  }
- h1 h2 h3 h4 p ul{
-  margin-top: 0px;
-  margin-bottom: 0px;
- }
- 
+
  
  button {
    cursor: pointer;
@@ -36,20 +47,23 @@
  header {
   border-bottom: 1px solid var(--header-border);
  }
- /* img{
+ img{
   display: block; 
-   } */
-/*.visually-hidden {   */
-   .visually-hidden {
-    position: absolute;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0;
-    border:0;
-    height: 1px; 
-    width: 1px; 
-    overflow: hidden;
   }
+
+  .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+   
+    }
+ 
+
+
   .container {
     width: 1200px;
     padding-left: 15px;
@@ -59,28 +73,34 @@
     margin-left: auto;
   }
 
-  .external{
+  .wrapper{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  }
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+text-align: left;
+
+}
+
+
  .list{
-  font-size: 14px;
-
    list-style: none;
-
    margin: 0;
    padding: 0;
  }
+
+
+
  .link{
   text-decoration: none;
 }
+
+
  .section-title{
    font-weight: 700;
-   font-size: 14px;
-
    color: var(--primary-text-color);
 
    
@@ -90,9 +110,11 @@
  /*----------HEADER----------*/
  .menu{
    font-weight: 500;
-  font-size: 14px;
-  display: flex;
+   display: flex;
   align-items: center;
+ }
+ .current {
+   color: var(--accent-color);
  }
  
  .menu-nav{
@@ -113,8 +135,9 @@
  }
  .logo-blue{ color: var(--accent-color); }
  .logo-black{ color: var(--title-text-color)}
+
  
- 
+
  .current,
  .menu-nav:hover,
  .menu-nav:focus,
@@ -122,29 +145,46 @@
  .menu-contact:focus,
  .footer-contacts:hover,
  .footer-contacts:focus{
-   color: var(--accent-color);
+  color: var(--accent-color);
  }
- 
- /*----------Герой----------*/
- .list-flex{
+  .list-flex {
   display: flex;
-}
+  }
+  .list-flex>li:not(:last-child) {
+  margin-right: 50px;
+  }
+  .link-nav{
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+  
+   } 
+ /*----------Герой----------*/
+ 
+
+
  .hero {
    background-color: var(--background-accent-color);
    text-align: center;
+   padding-top: 200px;
+   padding-bottom: 200px;
  }
  
- .hero-title,
- .hero-button {
-   letter-spacing: 0.06em;
-   color: var(--title-color);
-   font-weight: 700;
-  
+ 
+.hero-container {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.hero-title,
 .hero-button {
-  margin-bottom: 0px;
-  padding: 0px;
+ letter-spacing: 0.06em;
+ color: var(--title-color);
+
+
 }
+
  
  .hero-title {
    font-weight: 900;
@@ -159,6 +199,7 @@
    
  }
  
+ 
  .hero-button {
    font-family: inherit;
    font-weight: 700;
@@ -167,47 +208,132 @@
    background-color: var(--accent-color);
    color: var(--title-color);
    border-radius: 4px;  
-  border-color: transparent;
+   border-color: transparent;
  }
- .hero-btn{
+ .hero-button{
   padding: 10px 32px;
   min-width: 200px;
 }
  
  /*----------Особливості----------*/
 
+.list-title{
+  text-transform: uppercase;
+}
  .list-text{
    line-height: 1.7;
  }
- 
+ .section-features{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-list {
+  display: flex;
+  text-align: left;
+}
+.features-list>li {
+  width: calc((100% - (3 * 30px)) / 4);
+}
+
+.features-list>li:not(:last-child) {
+  margin-right: 30px;
+}
  /*----------Чим займаємося---------*/
- .title-size{
+.title-size{
    font-size: 36px;
+   padding-bottom: 50px;
+   margin: 0;
  }
+
+ .section-works{
+  padding-bottom: 94px;
+}
+
+.list-works > li:not(:last-child){
+  margin-right: 30px;
+}
+.list-works
+{
+  display: flex;
+}
+.list-fotos
+{
+  display: block;
+}
+
  
  /*----------Наша команда----------*/
- .team {
-   background-color: var(--team-background-color);
+ .team{
+  background-color: var(--team-background-color);
+
+
+ padding-top: 94px;
+ padding-bottom: 94px;
  }
  
- .team-name,
- .professions {
+.team-name,
+.professions {
    font-size: 16px;
  }
+    .professions {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
  .team-name {
    font-weight: 500;
    color: var(--primary-text-color);
+   margin-top: 0;
+   margin-bottom: 10px;
  }
+   
+
+    .team-list {
+      display: flex;
+    }
+
+.team-items {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  background-color: var(--title-color);
+}
+
+.team-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cards{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-foto{
+  display: block;
+}
+
  
- /*----------Футер---------*/
+ /*----------Футер-------*/
  .footer {
    background-color: var(--background-accent-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
  }
 
+ .footer-wrapper {
+   text-align: left;
+ }
 
- .footer-studio,
- .footer-address,
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
  .logo-white {
+   color: var(--title-color);
+ }
+ .footer-address {
    color: var(--title-color);
  }
  
@@ -215,14 +341,19 @@
    line-height: 1.7;
    color: var(--footer-email-tel);
  }
- 
- /*----------Page Portfolio.html----------*/
 
- .list-flex{
-  display: flex;
-}
+
+ .footer-list {
+   display: inline-block;
+   margin-bottom: 9px;
+ }
+
+ /*----------Page Portfolio.html ----------*/
+
+
 
  .buttons {
+  padding: 6px 22px;
    font-family: inherit;
    font-weight: 500;
    font-size: 16px;
@@ -242,12 +373,49 @@
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  margin-top: 0;
  }
  
  .portfolio-text {
-   font-size: 16px;
-   line-height: 1.9;
-   color: var(--nav-contact-color);
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--nav-contact-color);
+  margin-top: 0;
+  margin-bottom: 0;
  }
 
- 
+ .navigation-projects {
+   padding-top: 94px;
+   padding-bottom: 94px;
+ }
+.projects-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.projects-list:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-element {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - (2 * 30px)) / 3);
+  outline: 1px solid var(--portfolio-border);
+}
+
+.portfolio-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-cards {
+  text-align: left;
+  padding: 20px 24px;
+}
