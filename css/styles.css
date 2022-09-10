@@ -52,6 +52,13 @@ img {
   display: block;
 }
 
+
+h3,
+p,
+ul{
+  margin: 0px;
+  padding: 0px;
+}
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -97,6 +104,8 @@ img {
 
 .link {
   text-decoration: none;
+  list-style: none;
+
 }
 
 
@@ -134,7 +143,6 @@ img {
   font-size: 26px;
   line-height: inherit;
   margin-right: 93px;
-
 }
 
 .logo-blue {
@@ -171,6 +179,8 @@ img {
   padding-bottom: 32px;
 
 }
+
+
 
 /*----------Герой----------*/
 
@@ -224,7 +234,7 @@ img {
   border-color: transparent;
 }
 
-.hero-button {
+.hero-btn {
   padding: 10px 32px;
   min-width: 200px;
 }
@@ -233,6 +243,7 @@ img {
 
 .list-title {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .list-text {
@@ -260,8 +271,7 @@ img {
 /*----------Чим займаємося---------*/
 .title-size {
   font-size: 36px;
-  padding-bottom: 50px;
-  margin: 0;
+ margin: 0;
 }
 
 .section-works {
@@ -274,6 +284,7 @@ img {
 
 .list-works {
   display: flex;
+  margin-top: 50px;
 }
 
 .list-fotos {
@@ -323,8 +334,8 @@ img {
 }
 
 .cards {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .team-foto {
@@ -333,11 +344,15 @@ img {
 
 
 /*----------Футер-------*/
+.contacts-list{
+list-style: none;
+}
+
 .footer {
   background-color: var(--background-accent-color);
-
   padding-top: 60px;
   padding-bottom: 60px;
+
 }
 
 .footer-wrapper {
@@ -346,6 +361,8 @@ img {
 
 .footer .logo {
   display: inline-block;
+  /* margin-bottom: 20px; */
+  margin-right: 93px;
   margin-bottom: 20px;
 }
 
@@ -406,33 +423,42 @@ img {
   margin-bottom: 0;
 }
 
+
+
 .navigation-projects {
   padding-top: 94px;
   padding-bottom: 94px;
+
 }
 
+
 .projects-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+display: flex;
+justify-content: center;
+ margin-bottom: 34px;
+
 }
 
 .projects-list:not(:last-child) {
   margin-right: 8px;
 }
 
+
+
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
 }
-
+/*  width: calc((100% - (2 * 30px)) / 3);
+  100% ширини  батька відняти дві відстані між елементами по 30px і розділити на 3 колонки 
+  */
 .portfolio-element {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - (2 * 30px)) / 3);
-  outline: 1px solid var(--portfolio-border);
+border-bottom: 1px solid var(--portfolio-border);
 }
-
+/* кожному третьому правий марджин 0 */
 .portfolio-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -440,4 +466,8 @@ img {
 .portfolio-cards {
   text-align: left;
   padding: 20px 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  /* border-left: 1px solid var(--portfolio-border); */
 }
