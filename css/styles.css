@@ -410,7 +410,7 @@ list-style: none;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   margin-top: 0;
 }
 
@@ -468,9 +468,7 @@ border-bottom: 1px solid var(--portfolio-border);
 
 .portfolio-cards {
   text-align: left;
-  /* padding: 20px 24px; */
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  /* border-left: 1px solid var(--portfolio-border); */
+  padding: 20px 24px;
+  border-left: 1px solid var(--portfolio-border);
+  border-right: 1px solid var(--portfolio-border);
 }
