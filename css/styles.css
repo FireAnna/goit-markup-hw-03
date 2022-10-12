@@ -21,13 +21,14 @@
   --footer-email-tel: rgba(255, 255, 255, 0.6);
   --header-border: #ececec;
   --portfolio-border: #eeeeee;
+  --hero-btn: #188CE8;
 }
 
 /*----------BODY----------*/
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -237,6 +238,10 @@ ul{
   min-width: 200px;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-btn)
+}
 /*----------Особливості----------*/
 
 .list-title {
@@ -382,6 +387,10 @@ list-style: none;
   margin-bottom: 9px;
 }
 
+.footer-list:hover .footer-address,
+.footer-list:focus .footer-address {
+color: var(--accent-color);
+}
 /*----------Page Portfolio.html ----------*/
 
 
